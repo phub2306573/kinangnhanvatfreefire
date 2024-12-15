@@ -1,0 +1,127 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15pt;
+  padding-left: 40px;
+  padding-right: 30px;
+  background-image: url(images/pexels-lamiko-3616764.jpg);
+  background-size: cover;
+  
+  /* background-attachment: fixed; */
+} 
+tr:hover {
+  background-color: #92dbdb;
+}
+.p {
+  text-indent: 30px;
+}
+
+.text {
+  overflow: hidden;
+}
+
+.styled-table {
+  margin: 10px; /* Tạo khoảng cách xpx xung quanh bảng */
+  border-collapse: collapse; Để các đường viền không bị chồng chéo
+  width: 100%;
+  max-width: 1200px;
+}
+
+.styled-table th, .styled-table td {
+  border: 1px solid #000000; /* Đường viền mỏng xung quanh các ô */
+  padding: 8px; /* Khoảng cách giữa nội dung và đường viền */
+  text-align: left; /* Căn chỉnh nội dung bên trái */
+  background-color: #dedede; /* Màu nền khi di chuột qua hàng */
+  
+}
+
+.responsive-img60 {
+  max-width: 60%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.responsive-img30 {
+  max-width: 30%;
+  height: auto;
+
+
+}
+.col-1 {
+  width: 20%; /* Set width for the first column */
+  
+}
+.col-2 {
+  width: 15%; /* Set width for the second column */
+}
+.col-3 {
+  width: 50%; /* Set width for the third column */
+}
+.col-4{
+  width: 10%; /* Set width for the fourth column */
+  text-align: center; /* Canh giữa theo chiều ngang */
+  vertical-align: middle; /* Canh giữa theo chiều dọc */
+}
+.stt td{
+  width: 50px;
+  text-align: center;
+}
+.bluecolor{
+  font-weight: bold;
+  color:rgb(34, 0, 255);
+}
+.image-container {
+  position: relative; /* Để có thể định vị nội dung bên trong */
+  display: inline-block; /* Đảm bảo kích thước của hình ảnh phù hợp với nội dung */
+  height: auto;
+}
+.image-container img {
+  width: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng của phần tử chứa */
+  height: auto; /* Giữ tỷ lệ khung hình */
+}
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(0, 0, 0);
+  font-size: 4vw; /* Kích thước chữ theo viewport width */
+  background-color: rgba(158, 143, 143, 0.5);
+  padding: 20px;
+  border-radius: 20px;
+  font-weight:bold;
+  
+}
+.thanh-hinh-anh {
+  display: flex;
+  
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.content {
+  padding: 20px;
+}
+
+#scrollToTopBtn {
+  display: none; /* Ẩn nút ban đầu */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  background-color: #4e4848;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #555;
+}
